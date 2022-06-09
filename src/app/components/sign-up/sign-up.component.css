@@ -1,0 +1,60 @@
+.form{
+    width: 30%;
+    background-color: rgb(250, 253, 255);
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px  rgb(120, 120, 120);
+    margin: auto;
+    margin-top: 50px;
+}
+.heading p{
+    font-family:'Times New Roman', Times, serif;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 73, 137);
+    font-size:30px;
+}
+.forgot{
+    font-size: 13px;
+    float:right;
+    color: rgb(110, 110, 110);
+}
+.forgot:hover{
+    cursor: pointer;
+    color: black;
+}
+.signInButton button{
+    width: 100%;
+    background-color: rgb(216, 237, 255);
+    border-radius: 15px;
+    color: rgb(0, 73, 137);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.signInButton :hover{
+    background-color: rgb(190, 225, 255);
+    box-shadow: 1px 1px 5px rgb(220, 224, 255);
+}
+#or{
+    text-align: center;
+    color:rgb(110, 110, 110);
+}
+.signUp{
+    text-align: center;
+}
+.signUp a{
+    text-decoration: none;
+    color: rgb(40, 40, 115);
+    font-size: 1.1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.signUp a:hover{
+    cursor: pointer;
+    color: black;
+}
+.error{
+    color: red;
+    font-size: 12px;
+}
+.submitBtn:disabled{
+    cursor: not-allowed;
+}

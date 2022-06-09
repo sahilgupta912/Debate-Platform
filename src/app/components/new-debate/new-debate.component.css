@@ -1,0 +1,68 @@
+.darkBox{
+    width: 100%;
+    height: 15%;
+    background-color: rgb(1, 1, 41);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.boxNavigation{
+    margin-left: 10%;
+    width: 100%;
+}
+.boxNavigation ul li{
+    float: left;
+    list-style-type: none;
+    color: rgb(232, 232, 232);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-bottom: 7px solid rgb(1, 1, 41);
+}
+.boxNavigation ul li:hover, .active{
+    border-bottom: 7px solid rgb(144, 144, 197);
+    cursor: pointer;
+}
+.newDebate{
+    align-self: flex-end;
+}
+.newDebate button{
+    background-color: #2370b3;
+    color: rgb(219, 237, 244);
+    padding:10px 20px;
+    border-radius: 25px;
+    margin-right: 3em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.newDebate button:hover{
+    background-color: rgb(159, 192, 215);
+    color: rgb(12, 31, 79);
+}
+
+.outer{
+    border-radius: 15px;
+    margin: 0px 10em;
+    /* background-color: #e0eaf3;
+    box-shadow: 1px 1px 4px rgb(71, 71, 71); */
+}
+.createDebate{
+    padding: 30px 10px;
+}
+ form input{
+    margin: 15px 0px;
+    border: none;
+    background-color: #EBECF4;
+    border-bottom: 1px solid rgb(101, 104, 117);
+    border-radius: 0px;
+}
+form select{
+    color: rgb(132,117,125);
+    background-color: #EBECF4;
+    border: none;
+    border-bottom: 1px solid rgb(101, 104, 117) ;
+    border-radius: 0px;
+}
+h1{
+    color: rgb(1,1,41);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

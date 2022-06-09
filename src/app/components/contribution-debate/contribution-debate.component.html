@@ -1,0 +1,35 @@
+<div class="darkBox">
+    <div class="newDebate">
+        <button class="btn btn-primary" routerLink="/newDebate">Create New</button>
+    </div>
+
+    <div class="boxNavigation">
+        <ul>
+            <li routerLink="/popularDebate" >Populars</li>
+            <li routerLink="/recentDebate" >Recents</li>
+            <li class="active" routerLink="/contributionDebate" >My Contributions</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="recent main">
+        <h2>My Contributed Debates</h2>
+        <div class="inner">
+            <div class="cards" *ngFor="let debate of debateService.debates" (click)="debateContent(this.debate)">
+                <mat-card class="debateCard">
+                    <mat-card-title class="title">{{debate.title}}</mat-card-title>
+                    <!-- <img mat-card-image src="assets/images/download.jpg" class="debateImg"> -->
+                    <mat-card-content class="description">{{debate.description}} </mat-card-content>
+                    <mat-divider inset></mat-divider>
+                    <mat-card-actions class="actions">
+                        <i class="fa fa-thumbs-o-up ms-2 likes" aria-hidden="true"></i> {{debate.likes}}
+                        <span class="contribution me-4" style="float: right;">Contributions:
+                            {{debate.contributions}}</span><br>
+                            <span class="created ms-1">Created on: {{debate.createdOn.seconds*1000|date}}</span><br>
+                        </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

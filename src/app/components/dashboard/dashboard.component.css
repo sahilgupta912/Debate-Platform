@@ -1,0 +1,82 @@
+
+.profile{
+    display: flex;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #020630;
+    
+}
+.profile i{
+    width: fit-content;
+    font-size: 8em;
+}
+.details {
+    align-self: flex-end;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.name{
+    font-size: 2em;
+}
+.contribution{
+    font-size: 1em;
+}
+.delete{
+    margin-left: auto;
+    align-self: center;
+}
+.delete button{
+    padding: 4px 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.main{
+    border-radius: 10px;
+    background-color: #fafbff;
+    box-shadow: 1px 1px 2px grey;
+}
+.main h3{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(15, 29, 84);
+    letter-spacing: 1px;
+}
+.inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+}
+.cards{
+    padding-bottom: 20px;
+}
+.debateCard{
+    width: 20em;
+    margin:0px 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px grey;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #F7F8FF;
+}
+.debateCard img{
+    height: 7em;
+}
+.debateCard:hover{
+    box-shadow: 2px 2px 5px grey;
+    cursor: pointer;
+}
+.row{
+    margin: 20px;
+}
+
+.title{
+    color: #070f57;
+}
+.description{
+    color: #2a3198;
+}
+.cardContribution{
+    color: #3040ca;
+}

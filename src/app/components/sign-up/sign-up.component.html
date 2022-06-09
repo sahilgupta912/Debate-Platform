@@ -1,0 +1,32 @@
+<div class="form">
+    <div class="heading">
+        <p>Sign Up</p>
+    </div>
+    <form [formGroup]="this.authService.form">
+        <div class="form-group name mt-4">
+            <input type="text" class="form-control mt-2" name="" id="" placeholder="Name" #userName formControlName="name">
+            <p class="error ms-2" *ngIf="authService.form.controls['name'].invalid &&(authService.form.controls['name'].dirty || authService.form.controls['name'].touched)">Field is mandatory!</p>
+        </div>
+        <div class="form-group emailDiv my-3">
+            <input type="email" class="form-control mt-2" name="" id="" placeholder="Email address" #userEmail formControlName="email">
+            <p class="error ms-2" *ngIf="authService.form.controls['email'].invalid &&(authService.form.controls['email'].dirty || authService.form.controls['email'].touched)">Field is mandatory!</p>
+
+        </div>
+        <div class="form-group password ">
+            <input type="password" class="form-control mt-2" name="" id=""  placeholder="Password" #userPwd formControlName="password">
+            <p class="error ms-2" *ngIf="authService.form.controls['password'].invalid &&(authService.form.controls['password'].dirty || authService.form.controls['password'].touched)">Field is mandatory!</p>
+
+        </div>
+        <div class="form-group confirmPassword my-3">
+            <input type="password" class="form-control mt-2" name="" id=""  placeholder="Confirm Password" #userCnfmPwd formControlName="confirmPassword">
+            <p class="error ms-2" *ngIf="authService.form.controls['confirmPassword'].invalid &&(authService.form.controls['confirmPassword'].dirty || authService.form.controls['confirmPassword'].touched)">Field is mandatory!</p>
+
+        </div>
+        <div class="form-group signInButton mt-4">
+            <button class="btn submitBtn" title="this is button" [disabled]="!authService.form.valid" type="submit" (click)="authService.SignUp(userName.value,userEmail.value,userPwd.value); onSubmit();">Submit</button>
+        </div>
+        <div class="form-group signUp mt-2">
+            <p id="or">Already a User? <a routerLink="../signIn">Sign In Here!</a></p>
+        </div>
+    </form>
+</div>

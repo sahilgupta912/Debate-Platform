@@ -1,0 +1,21 @@
+<div class="form">
+    <div class="heading">
+        <p>Sign In</p>
+    </div>
+    <div class="form-group emailDiv mt-5">
+      <input type="email" class="form-control mt-2" name="" id="" placeholder="abc@example.com" #userEmail>
+    </div>
+    <div class="form-group password mt-3">
+        <input type="password" class="form-control mt-2" name="" id=""  placeholder="password" #userPassword>
+    </div>
+    <div class="form-group forgot m-1">
+        <p>Forgot password?</p>
+    </div><br>
+    <div class="form-group signInButton">
+        <button class="btn" type="submit" (click)="authService.SignIn(userEmail.value, userPassword.value)">Submit</button>
+    </div>
+    <div id="or">or</div>
+    <div class="form-group signUp">
+        <p><a routerLink="../signUp" >Create Account Here!</a></p>
+    </div>
+</div>

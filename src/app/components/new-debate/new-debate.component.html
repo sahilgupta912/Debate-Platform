@@ -1,0 +1,30 @@
+<div class="darkBox">
+    <div class="newDebate">
+        <button class="btn btn-primary">Create New</button>
+    </div>
+    <div class="boxNavigation">
+        
+        <ul>
+            <li routerLink="/popularDebate" >Populars</li>
+            <li class="" routerLink="/recentDebate">Recents</li>
+            <li routerLink="/contributionDebate">My Contributions</li>
+        </ul>
+    </div>
+</div>
+
+<div class="outer">
+    <div class="createDebate" style="width: 40%; margin: auto; margin-top: 40px;">
+        <h1>Create a new debate</h1>
+        <form action="" [formGroup]="debateService.debateForm">
+            <input type="text" name="" id="" placeholder="title" class="form-control" #title>
+            <select name="" id="" class="form-select" (change)="debateService.selectChanger($event)">
+                <option  *ngFor="let o of options" [value]="o.name">
+                    {{o.name}}
+                </option>
+            </select>
+            <input type="text" name="" id="" placeholder="description" class="form-control" #description>
+            <button type="submit" class="btn btn-dark mt-3" 
+            (click)="debateService.createNewDebate(title.value, description.value)">Create</button>
+          </form>
+      </div>
+</div>

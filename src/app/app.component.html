@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar">
+    <div class="logo">
+        <!-- <a routerLink="debate" class="logo">Debate</a> -->
+        <img src="../assets/images/debateProfile6.png" alt="" routerLink="popularDebate" >
+    </div>
+  
+    <div class="input-group searchBar">
+        <input type="search" class="form-control searchInput search" placeholder="search debates..." aria-label="Search" aria-describedby="search-addon">
+        
+    </div>
+    <div class="links">
+
+        <a routerLink="signIn"  *ngIf="!authService.isLogged" class="signIn"><i class="fa fa-sign-in"></i> Sign In</a>
+        <a routerLink="dashboard" *ngIf="authService.isLogged" class="dashboard"><i class="fa fa-user"></i> {{authService.userName}}</a>
+        <a (click)="authService.SignOut()" *ngIf="authService.isLogged" class="logOut"><i class="fa fa-sign-out"></i> Log out</a>
+    </div>
+</div>
+<router-outlet class="outlet" ></router-outlet>

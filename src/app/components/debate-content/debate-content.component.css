@@ -1,0 +1,97 @@
+.debateBody{
+    background-color: rgb(245, 244, 253);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid rgb(203, 203, 233);
+    display: flex;
+    flex-wrap: wrap;
+}
+.likes{
+    width: fit-content;
+    font-size: 20px;
+}
+.debateHead{
+    width: 80%;
+}
+.debateBody span{
+    color: #070f57;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.debateTitle{
+    font-size: 2em;
+}
+.debateDescription{
+    font-size: 1.1em;
+}
+.initiated span{
+    color: rgb(65, 65, 123);
+}
+/* 
+.points{
+    display: flex;
+    height: 30em;
+}
+.pointTable{flex-basis: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.pointTable ul{
+    height: 28em;
+}
+.pointTable ul{
+    list-style-type: none;
+    border: 1px solid rgb(2, 2, 43);
+    padding: 0px;
+} 
+.head{
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(229, 231, 240);
+    padding: 10px;
+}
+.agree{
+    background-color: rgb(153, 201, 153);
+}
+.disagree{
+    background-color: rgb(197, 132, 132);
+}
+*/
+.points{
+    height: fit-content;
+    border: 1px solid rgb(166, 154, 208);
+    padding: 0px;
+    border-radius: 20px;
+}
+tbody tr td{
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px;
+    color: #070f57;
+}
+.pointsTable td {
+    border-left: 1px solid rgb(166, 154, 208);
+    border-right: 1px solid rgb(166, 154, 208);
+}
+tr:nth-child(odd) {background-color: #f2f2f2;}
+
+th.agree, th.disagree{
+    width: 50%;
+}
+.head{
+    text-align: center;
+    border-radius: 20px;
+}
+.head .agree{
+    background-color: rgb(179, 234, 179);
+    border-top-left-radius: 20px;
+}
+.head .disagree{
+    background-color: rgb(236, 167, 167);
+    border-top-right-radius: 20px;
+}
+.postedBy{
+    font-size: 12px;
+    margin-left: 0.5em;
+    float: right;
+    margin-right: 2em;
+}

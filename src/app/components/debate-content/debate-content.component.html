@@ -1,0 +1,71 @@
+<div class="container mt-5">
+    <div class="row debateBody flex">
+        <div class="likes">
+            <i class="fa fa-thumbs-o-up ms-2 likes" aria-hidden="true" ></i><br><span style="font-size: 15px; margin-left: 0.3em;">{{debate?.likes}}</span>
+        </div>
+        <div class="debateHead">
+            <div class="debateTitle">
+                <span>{{debate?.title}}</span>
+            </div>
+            <div class="debateDescription mt-3">
+                <span>{{debate?.description}} </span>
+            </div>
+            <div class="initiated mt-3">
+                <span>Initiated by: {{debate?.initiatedBy | titlecase}}</span>
+            </div>
+        </div>
+        <!-- <div class="points mt-3">
+            <div class="favour pointTable">
+                <ul>
+                    <li class="head agree">Agree</li>
+                    <li>This is the first point in the favour.</li>
+                </ul>
+            </div>
+            <div class="against pointTable">
+                <ul>
+                    <li class="head disagree">DisAgree</li>
+                    <li>This is the first point in the against.</li>
+                </ul>
+            </div>
+        </div> -->
+        <div class="points mt-3">
+            <table class="table pointsTable">
+                <!-- <colgroup>
+                    <col span="1" style="width: 50%;">
+                    <col span="1" style="width: 50%;">
+                </colgroup> -->
+                
+                <thead class="head">
+                    <tr>
+                        <th class="agree">Agree</th>
+                        <th class="disagree">DisAgree</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let point of agreeArr; let i=index">
+                    <!-- <tr>
+                        <td>This is the first point of the agree section<br><span class="postedBy">-Sahil Gupta</span></td>
+                        <td>This is the first point of the disagree section<br><span class="postedBy">-Sahil Gupta</span></td>
+                    </tr>
+                    <tr>
+                        <td>This is the second point of the agree section.<br><span class="postedBy">-Sahil Gupta</span></td>
+                        <td>This is the second point of the disagree section.<br><span class="postedBy">-Sahil Gupta</span></td>
+                    </tr> -->
+                    <tr >
+                        <td>{{point.point}} <br><span class="postedBy">posted by: {{point.postedBy | titlecase}}</span> </td>
+                        <td>{{disagreeArr[i].point}} <br><span class="postedBy">posted by: {{disagreeArr[i].postedBy | titlecase}}</span> </td>
+                    </tr>
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><input type="text" name="" id="" placeholder="Add another point" class="form-control me-3" 
+                            style="width: 50%; float: left;" [(ngModel)]="newAgree" ><button type="submit" class="btn btn-primary" (click)="debateService.addAgree(newAgree)">Add</button></td>
+                        <td><input type="text" name="" id="" placeholder="Add another point" class="form-control me-3" 
+                            style="width: 50%; float: left;"><button type="submit" class="btn btn-primary" (click)="debateService.addDisAgree()">Add</button></td>
+                    </tr>
+                </tfoot>
+                
+            </table>
+        </div>
+    </div>
+</div>

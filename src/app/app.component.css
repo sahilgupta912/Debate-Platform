@@ -1,0 +1,51 @@
+.navbar{
+    padding: 10px 20px;
+    overflow: hidden;
+    box-shadow: 0px 1px 2px rgb(182, 182, 182);
+}
+.navbar a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(18, 58, 71);
+    padding: 10px;
+}
+.logo{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 27px;
+}
+.logo img{
+    width: 5em;
+    height: 2em;
+    border-radius: 10px;
+}
+.logo img:hover{
+    cursor: pointer;
+}
+.searchBar{
+    width: 40%;
+    margin: auto;
+    position: relative;
+}
+.searchBar i{
+    position: absolute;
+    right: 35px;
+}
+.searchBar .search{
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: rgb(217, 223, 255);
+}
+
+
+.links{
+    float: right;
+}
+.logOut a, .dashboard a, .signIn a{
+    color:rgb(15, 29, 84);
+    font-size: 13px;
+}
+.logOut:hover , .signIn:hover, .dashboard:hover{
+    cursor: pointer;
+    background-color: #dde2f9;
+    border-radius: 40px;
+}

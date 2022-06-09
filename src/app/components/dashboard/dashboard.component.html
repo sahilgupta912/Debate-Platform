@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="profile">
+            <div class="icon">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            <div class="details">
+                <span class="name">{{authService.userName}}</span><br>
+                <span class="contribution">Contributions: {{authService.contribution}}</span>
+            </div>
+            <div class="delete">
+                <button class="btn btn-danger" (click)="authService.delete()">Delete my account</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="recent main">
+        <h3>My contributions:</h3>
+        <div class="inner">
+          <div class="cards" *ngFor="let debate of debateService.recentDebates">
+              <mat-card class="debateCard">
+                  <mat-card-title class="title">{{debate.title}}</mat-card-title>
+                  <!-- <img mat-card-image src="assets/images/download.jpg" class="debateImg"> -->
+                  <mat-card-content class="description">{{debate.description}} </mat-card-content>
+                    <mat-divider inset></mat-divider>
+                    <mat-card-actions>
+                        <i class="fa fa-thumbs-o-up ms-2" aria-hidden="true" ></i>{{debate.likes}}
+                        <span class="contribution me-4" style="float: right;">Contributions: 5</span>
+                    </mat-card-actions>
+              </mat-card>
+          </div>
+        </div>
+    </div>
+</div>

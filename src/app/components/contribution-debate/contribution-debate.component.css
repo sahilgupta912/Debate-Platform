@@ -1,0 +1,128 @@
+/* 
+.columns{
+    float: left;
+}
+.left
+{
+    width: 75%;
+}
+.right{
+    width: 25%;
+}
+.create{
+    padding: 20px;
+    background-color: rgb(234, 244, 254);
+    border-radius: 10px;
+    margin: auto;
+}
+.create div{
+    margin: 10px;
+}.create h1{
+    color: rgb(9, 22, 80);
+    font-weight: 500;
+} */
+.search{
+    background-color: rgb(247, 247, 247);   
+}
+
+.searchBar{
+    width: 40%;
+    margin: auto;
+}
+.main{
+    /* background-color: rgb(244, 246, 249); */
+    /* background-color: rgb(247, 247, 247); */
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+}
+.main h2{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(15, 29, 84);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+}
+.cards{
+    padding-bottom: 20px;
+}
+.debateCard{
+    width: 20em;
+    margin:0px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 2px grey;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f3f3f3;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.debateCard img{
+    height: 7em;
+}
+.debateCard:hover{
+    box-shadow: 2px 2px 5px grey;
+    cursor: pointer;
+}
+.row{
+    margin: 20px;
+}
+
+.title{
+    color: rgb(12, 31, 79);
+    font-size: 20px;
+}
+.description{
+    color: rgb(12, 31, 79);
+}
+.actions{
+    color: rgb(12, 31, 79);
+    font-size: 0.9em;
+}
+.darkBox{
+    width: 100%;
+    height: 15%;
+    background-color: rgb(1, 1, 41);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.boxNavigation{
+    margin-left: 10%;
+    width: 100%;
+}
+.boxNavigation ul li{
+    float: left;
+    list-style-type: none;
+    color: rgb(232, 232, 232);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding: 5px 20px;
+}
+.boxNavigation ul li:hover, .active{
+    border-bottom: 7px solid rgb(144, 144, 197);
+    cursor: pointer;
+}
+.newDebate{
+    align-self: flex-end;
+    
+}
+.newDebate button{
+    background-color: #2370b3;
+    color: rgb(219, 237, 244);
+    padding:10px 20px;
+    border-radius: 25px;
+    margin-right: 3em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.newDebate button:hover{
+    background-color: rgb(159, 192, 215);
+    color: rgb(12, 31, 79);
+}
